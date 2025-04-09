@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width : 768px) {
+    .content .video .pf-in {
+        width: 45%;
+    }
+    ul {
+        flex-wrap: wrap;
+    }
+    li {
+        width: 50%;
+    }
+    .content {
+        top: 80px;
+    }
+}
