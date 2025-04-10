@@ -35,10 +35,7 @@
         width: 26%;
     }
     main .container .box1 div {
-        padding-top: 110%;
-    }
-    main .container .box1 div iframe {
-
+        padding-top: 150%;
     }
     main .box2 {
         flex-direction: column;
@@ -104,7 +101,7 @@
 
 @media screen and (max-width : 400px) {
     main .container .box1 div {
-        padding-top: 180%;
+        padding-top: 250%;
     }
     main .box4 div:nth-child(1) .link {
         width: 200px;
