@@ -326,6 +326,7 @@ main .box2 {
     padding-top: 50px;
 }
 main .box2 > div {
+    margin-top: 10%;
     width: 50%;
     padding-bottom: 100px;
     color: #333;
@@ -341,6 +342,7 @@ main .box3 {
     align-items: flex-end;
 }
 main .box3 > div {
+    margin-top: 10%;
     width: 50%;
     padding-bottom: 100px;
     color: #333;
@@ -366,8 +368,8 @@ main .box4 > div:nth-child(1) {
     padding-left: 50px;
 }
 main .box4 > div:nth-child(1) .link {
-    width: 100%;
-    height: 80%;
+    width: 80%;
+    height: 60%;
     border-radius: 50%;
     border: solid 1px black;
     overflow: hidden;
@@ -385,10 +387,10 @@ main .box4 > div:nth-child(1) .link a img {
     transform: scale(1.1);
 }
 main .box4 > div:nth-child(1) a img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 main .box4 > div:nth-child(2) {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 800px;
     color: rgb(255, 255, 255);
 }
