@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'pretendard';
+    src: url("../Pretendard-1.3.9/public/static/Pretendard-Medium.otf");
+}
+@font-face {
+    font-family: 'jua';
+    src: url("../배민-주아체/BMJUA_ttf.ttf");
+}
+
+
+body {
+    font-family: 'jua';
+}
+
+/* 헤더시작 */
+header {
+    width: 100%;
+    height: 50px;
+    display: fixed;
+}
+header .head h1 a {
+    display: flex;
+}
+header .head h1 a div {
+    width: 50px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px;
+}
+header .head h1 a div img {
+    object-fit: cover;
+    position: absolute;
+    width: 50px; 
+    height: 50px;
+    top: -5px;
+}
+header .head {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color
+    : rgba(66, 66, 66, 0.8);
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    animation-name: header;
+    animation-duration: 4s;
+
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes header {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+header .head h1 a {
+    color: white;
+}
+header .head nav > ul {
+    display: flex;
+    justify-content: space-between;
+}
+header .head nav > ul li {
+    width: 50px;
+    margin-left: 1.5rem;
+    font-size: 0.8rem;
+    text-align: center;
+}
+header .head nav > ul li a {
+    color: rgb(255, 255, 255);
+}
+header .head nav > ul li:nth-child(3){
+    width: 80px;
+}
+header .head nav > ul li:nth-child(4) {
+    padding-right: 10px;
+}
+header .head nav > ul li.on a {
+    color: rgb(255, 190, 190);
+    font-weight: bold;
+}
+/* 헤더끝 */
+
+/* 메인시작 */
+main {
+    width: 100%;
+}
+/* 메인 ani */
+main > div {
+    width: 100%;
+    height: 100vh;
+}
+.ani_text, .ani_box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* 인트로 */
+    /* display: none; */
+}
+.ani_text > div, .ani_box > div {
+    font-family: 'jua';
+}
+.ani_text {
+    color: white;
+    z-index: 5;
+    line-height: 700px;
+}
+.ani_text > div {
+    width: calc(100%/5);
+    text-align: center;
+    font-size: 5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-fill-mode: forwards;
+}
+.ani_text .ani_text1 {
+    animation-name: text1;
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.ani_text .ani_text2 {
+    animation-name: text2;
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.ani_text .ani_text3 {
+    animation-name: text3;
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.ani_text .ani_text4 {
+    animation-name: text4;
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+.ani_text .ani_text5 {
+    animation-name: text5;
+    animation-duration: 4s;
+    
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+@keyframes text1 {
+    0% {
+        top: 100%;
+    }
+    35% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+@keyframes text2 {
+    0% {
+        top: 100%;
+    }
+    45% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+@keyframes text3 {
+    0% {
+        top: 100%;
+    }
+    55% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+@keyframes text4 {
+    0% {
+        top: 100%;
+    }
+    65% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+@keyframes text5 {
+    0% {
+        top: 100%;
+    }
+    70% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+.ani_box > div {
+    width: calc(100%/4);
+    background-color: black;
+    z-index: 4;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: box1;
+    animation-duration: 4s;
+
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+@keyframes box1 {
+    0% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -100%;
+    }
+}
+
+/* 메인 ani 끝 */
+main .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+main .display {
+    width: 100%;
+    text-align: center;
+}
+main .box1 {
+    width: 100%;
+    text-align: center;
+}
+main .container .box1 div {
+    width: 100%;
+    padding-top: 56.75%;
+    position: relative;
+    overflow: hidden;
+}
+main .container .box1 div iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main .container .work {
+    width: 100%;
+    font-size: 3rem;
+    /* background: linear-gradient(to right, #a8c0ff, #3f8efc);   */
+    background-image: url('../img/배경1.jpg');
+    background-size: cover;
+    background-position: center;  
+}
+main .box2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+main .box2 > div {
+    margin-top: 10%;
+    width: 50%;
+    padding-bottom: 100px;
+    color: #333;
+}
+main .box2 > div img {
+    width: 60%;
+}
+
+main .box3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: flex-end;
+}
+main .box3 > div {
+    margin-top: 10%;
+    width: 50%;
+    padding-bottom: 100px;
+    color: #333;
+}
+main .box3 > div img {
+    width: 60%;
+}
+main .box4 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url('../img/work.jpg');
+    background-size: cover;
+    background-attachment: fixed;  
+    background-position: center;  
+}
+main .box4 > div {
+    width: 50%;
+}
+main .box4 > div:nth-child(1) {
+    padding-left: 50px;
+}
+main .box4 > div:nth-child(1) .link {
+    width: 80%;
+    height: 60%;
+    border-radius: 50%;
+    border: solid 1px black;
+    overflow: hidden;
+}
+main .box4 > div:nth-child(1) .link a {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+main .box4 > div:nth-child(1) .link a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+    transform: scale(1.1);
+}
+main .box4 > div:nth-child(1) a img:hover {
+    transform: scale(1.3);
+}
+main .box4 > div:nth-child(2) {
+    font-size: 3rem;
+    line-height: 800px;
+    color: rgb(255, 255, 255);
+}
+main .box5 {
+    width: 100%;
+    padding-top: 100px;
+}
+main .box5 > div:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+main .box5 .profile {
+    width: 100%;
+    height: 100vh;
+}
+main .box5 .profile .profile_box {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+main .box5 .profile .profile_box img {
+    max-width: 100%;
+    padding-top: 50px;
+}
+.gotop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    background-color: #333;
+    right: 50px;
+    bottom: 50px;
+    opacity: 0;
+    transition: all .3s;
+}
+.gotop.on {
+    opacity: 1;
+}
+span {
+    position: absolute;
+    top: 17px;
+    left: 15px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+/* 메인끝 */

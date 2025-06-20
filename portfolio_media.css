@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@media screen and (max-width : 768px) {
+    header .head {
+        display: block;
+        align-items: start;
+        height: 70px;
+    }
+    header .head h1 a {
+        font-size: 1.5rem;
+        align-items: center;
+    }
+    header .head h1 a div {
+        width: 45px;
+        height: 35px;
+        margin-top: 6px;
+    }
+    header .head h1 a div img {
+        width: 45px;
+        height: 45px;
+    }
+    header .head nav {
+        margin-bottom: 5px;
+    }
+    header .head nav > ul {
+        width: 100%;
+        margin-top: 5px;
+    }
+    header .head nav > ul li:nth-child(1), header .head nav > ul li:nth-child(2){
+        width: 24%;
+        margin-left: 0;
+        font-size: 0.8rem;
+    }
+    header .head nav > ul li:nth-child(3), header .head nav > ul li:nth-child(4) {
+        width: 26%;
+    }
+    main .container .box1 div {
+        padding-top: 150%;
+    }
+    main .box2 {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .box2 div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    main .box2 div img {
+        width: 100%;
+    }
+    main .box2 div:nth-child(3) {
+        order: 1;
+    }
+    main .box3 {
+        flex-direction: column;
+        width: 100%;
+    }
+    main .box3 div {
+        width: 80%;
+        margin: 0 auto;
+    }
+    main .box3 div:nth-child(3) {
+        order: 1;
+    }
+    main .box3 div:nth-child(5) {
+        order: 1;
+    }
+    main .box3 div:nth-child(6) {
+        order: 1;
+    }
+    main .box3 div img {
+        width: 100%;
+    }
+
+    main .box4 {
+        flex-direction: column;
+    }
+    main .box4 div {
+        width: 80%;
+        height: 20%;
+        margin: 0 auto;
+        justify-content: none;
+    }
+    main .box4 div:nth-child(1) {
+        width: 80%;
+        height: 500px;
+        padding-left: 0px;
+    }
+    main .box4 div:nth-child(1) .link {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+    main .box4 div:nth-child(2) {
+        width: 100%;
+        line-height: 0px;
+        position: relative;
+        top: -80px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    main .container .box1 div {
+        padding-top: 250%;
+    }
+    main .box4 div:nth-child(1) .link {
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    main .box4 div:nth-child(2) {
+        font-size: 1.5rem;
+    }
+}

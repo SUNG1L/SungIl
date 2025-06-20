@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'pretendard';
+    src: url("../Pretendard-1.3.9/public/static/Pretendard-Medium.otf");
+}
+@font-face {
+    font-family: 'jua';
+    src: url("../배민-주아체/BMJUA_ttf.ttf");
+}
+
+html {
+    font-family: 'jua';
+}
+
+h1 {
+    padding: 20px;
+    background-color: #707070;
+    color: white;
+}
+.container {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    position: relative;
+}
+input {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+}
+li {
+    width: calc(100%/2);
+    list-style: none;
+}
+label {
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    background-color: pink;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 40px; left: 0;
+    display: none;
+    padding: 20px;
+}
+.content .video {
+    width: 100%;
+    margin: 0 5%;
+}
+.content .video::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.content .video .pf-in {
+    width: 25%;
+    margin-right: 5%;
+    padding: 1rem;
+    background-color: rgb(255, 188, 188);
+    border: 1px solid #555;
+    margin-bottom: 3rem;
+    float: left;
+}
+.content .video .pf-in iframe {
+    width: 100%;
+}
+.content .video .pf-in strong {
+    font-size: 1rem;
+    color: rgb(250, 69, 69);
+    font-weight: 600;
+}
+.content .video .pf-in h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+input:checked ~ label {
+    background-color: rgb(247, 169, 182);
+    opacity: 1;
+}
+input:checked ~ .content {
+    display: block;
+    background-color: #ffffff;
+}
+
